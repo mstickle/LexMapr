@@ -91,11 +91,11 @@ def run(args):
                 "Third Party Classification"
             ]
 
-    fw = open(args.output, 'w') if args.output else sys.stdout     # Main output file
+    fw = open(args.output, 'w', encoding = 'utf-8') if args.output else sys.stdout     # Main output file
     fw.write('\t'.join(output_fields))
 
     # Input file
-    fr = open(args.input_file, "r")
+    fr = open(args.input_file, "r", encoding = 'utf-8')
     _, ext = os.path.splitext(args.input_file)
     if ext == ".csv":
         fr_reader = csv.reader(fr, delimiter=",")
