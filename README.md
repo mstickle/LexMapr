@@ -18,6 +18,10 @@ A Lexicon and Rule-Based Tool for Translating Short Biomedical Specimen Descript
 5. `python -m nltk.downloader all`
 6. Test installation: `lexmapr lexmapr/tests/test_input/small_simple.csv -c lexmapr/tests/test_config/small_simple_config.json`
 
+To update:
+1. `git pull` (if pulling changes from git)
+2. `pip install .`
+
 ### With Bioconda
 
 Set up [Bioconda](https://bioconda.github.io/), if you haven't already!

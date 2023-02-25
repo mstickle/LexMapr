@@ -552,7 +552,7 @@ class OntoHelper(object):
 
 			output.append('\t'.join(row))
 
-		with (open(output_file_basename + '.tsv', 'w')) as output_handle:
+		with (open(output_file_basename + '.tsv', 'w', encoding='utf-8')) as output_handle:
 			output_handle.write('\n'.join(output))
 
 

@@ -97,6 +97,7 @@ class Ontology(object):
 			# Generic TREE "is a" hierarchy from given root.
 			#
 			'tree': prepareQuery("""
+				PREFIX xsd: http://www.w3.org/2001/XMLSchema#
 				SELECT DISTINCT ?id ?label ?parent_id ?deprecated ?replaced_by 
 				WHERE {	
 					?parent_id rdfs:subClassOf* ?root.
