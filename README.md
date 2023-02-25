@@ -10,6 +10,14 @@ A Lexicon and Rule-Based Tool for Translating Short Biomedical Specimen Descript
 
 ## Installation
 
+### With Virtual Environment
+1. `python3 -m venv venv`
+2. Activate `venv`: `source venv/bin/activate`
+3. `cd <path_to_lexmapr>`
+4. `pip install .`
+5. `python -m nltk.downloader all`
+6. Test installation: `lexmapr lexmapr/tests/test_input/small_simple.csv -c lexmapr/tests/test_config/small_simple_config.json`
+
 ### With Bioconda
 
 Set up [Bioconda](https://bioconda.github.io/), if you haven't already!
